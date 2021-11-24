@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="author" content="Jos&eacute; Egea Monserrate">
+  <!--CSS Enlace-->
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <link rel="icon"  type="image/png" href="img/ico.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:wght@100;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+  </style>
+  <title>Visualtis</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <div class="flex_col">
+      <!--Menu de arriba-->
+      <div id="header_top">
+        <input type="image" id="logo" src="img/logo.png" alt="Visualtis" onclick="window.location.href='index.html'"/>
+        <nav class="navegacion">
+          <ul class="menu">
+            <li><a id="Mapa" class="a1" href="#">Mapa </a></li>
+            <li><a id="Conocenos" class="a1" href="#">Conocenos </a></li>
+            <li><a id="Contacto" class="a1" href="#">Contacto </a></li>
+            <li><a id="Ruta" class="a1" href="#">Ruta de viaje</a>
+              <ul class="submenu">
+                <li><a id="Ocio" class="a1" href="#">Ocio</a></li>
+                <li><a id="Refugios" class="a1" href="#">Refugios</a></li>
+                <li><a id="Gasolineras" class="a1" href="#">Gasolineras</a></li>
+                <li><a id="Alimentacion" class="a1" href="#">Alimentacion</a></li>
+                <li><a id="Medicamentos" class="a1" href="#">Medicamentos</a></li>
+              </ul>
+            </li>
+            <li><a id="Inscribirse" class="a1" href="#"href="">Inscribirse</a></li>
+            <li><a id="Acceder" class="a1" href="#">Acceder</a></li>
+          </ul>  
+        </nav>
+        <!--Iconos idioma-->
+        <div id="idiomas">
+          <input type="image" id="imgSP" src="img/sp.png" alt="IcoSP"/>
+          <br>
+          <input type="image" id="imgEN" src="img/en.png" alt="IcoEN"/>
+        </div>
+      </div>
+      <!--Slider Header-->
+      <div class="slider">
+        <!--Slider 1-->
+        <div class="slide active">
+          <img src="img/zombie1.png" alt="slide1">
+          <div class="info">
+            <h1>Esc&oacute;ndete o corre <br>pero sobrevive<br><br></h1><p>¿Podras llegar hasta el amanecer,vivo y <br> demostrar a todos que eres un superviviente?</p>
+          </div>
+        </div>
+        <!--Slider 2-->
+        <div class="slide">
+          <img src="img/zombie2.jpg" alt="slide2">
+          <div class="info">
+            <h1>Cartagena ha caido!<br><br></h1><p>Utiliza nuestro mapa para afrontar las hordas<br><br>
+            <a id="buttonHeader" href="#Mapa">Mapa</a></p>
+          </div>
+        </div>
+          <!--Slider 3-->
+        <div class="slide">
+          <img src="img/police1.jpg" alt="slide3">
+          <div class="info">
+            <h1>Visualtis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></h1>
+            <p><a id="buttonHeader" href="#TittleCo">Más sobre nosotros</a></p>
+          </div>
+        </div>
+        <!--Botones next y previous-->
+        <div class="navigation">
+          <i class="fas fa-chevron-left prev-btn"></i>
+          <i class="fas fa-chevron-left next-btn"></i>
+        </div>
+        <!--Iconos slider activo-->
+        <div class="navigation-visibility">
+          <div class="slide-icon active"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+        </div>
+
+        <!--Enlace Script-->
+        <script type="text/javascript" src="js/javascript.js"></script>  
+
+
+      </div>
+      <div id="line"><img id="lineImg" src="img/line.png"></div>
+    </div>
+  </header>
+  <!--Contenedor main-->
+  <main>
+    <!--Titulo main-->
+    <div>
+      <div><h1 id="TittleCo">Qué es Visualtis?</h1></div>
+    </div>
+    <!--Info main-->
+    <div>
+      <div class="flex_row">
+        <div id="fondo1" class="infoMain">
+          <p>Visualtis es la primera plataforma de reservas online turísticas de Cartagena.</p>
+          <p>Reserva con nosotros tu refugio turístico en la mejor ubicación de tu destino. En la costa, 
+            en el interior o en las principales zonas turísticas de Cartagena, encontrarás lo que buscas directamente 
+            en nuestra plataforma online, en dos clicks y al mejor precio.</p>
+          <p>Planifica tu próxima visita a Cartagena eligiendo tu refugio turístico ideal. Sólo tienes que consultar la disponibilidad de fechas, 
+            contactar con nosotros y reservar. Todo desde la página de nuestro buscador, en un momento y al mejor precio del mercado.</p>
+          <p>Sobrevive con nuestra ayuda en Cartagena. Seas peregrino, viajes en coche o lleges en transporte público, en Visualtis encontrarás los mejores refugios
+             que mejor se adapta a tus necesidades. Una escapada romántica, un viaje familiar, de fin de semana con los amigos o un viaje de negocios, visualtis hará 
+             que te sientas como en casa incluso con una horda de zombies rondando a tu alrededor. Es fácil, rápido y sencillo.</p>
+          <p>Disponemos de ubicaciones perfectas de extremo a extremo de Cartagena. 
+            Podrás ir a la playa, recorrer la sierra Minera, navegar por el puerto o visitar el teatro romano.</p>
+        </div>
+        <div id="fondo2" class="infoMain">
+          <p>Descubre el corazón de Cartagena, con sus zombies, puerto y montañas. Te sorprenderán nuestras refugios turísticos en entornos rurales y 
+            la cálida acogida de sus anfitriones que te mostrarán la riqueza, diversidad y cultura de Cartagena, dando a conocer lo mejor de nuestra tierra y de nosotros mismos.</p>
+          <p>Si te gusta nuestra gastronomía, encontrarás las mejores zonas de ocio y alimentación para cuando estes cansado de matar zombies,todo en nuestro mapa interactivo
+            el cual tambien incluye gasolineras y farmacias.
+          </p>
+          <p>No te lo pienses más y reserva tu refugio turístico con Visualtis.</p>
+          <p>Tenemos la mayor selección de refugios turísticos de Cartagena a tu disposición. Podrás contactar directamente con el anfitrión, sin intermediarios, conseguir las mejores 
+            condiciones y reservar en el primer buscador de refugios turísticas de Cartagena.</p>
+        </div>
+
+
+      </div>
+    </div>
+    <!--Titulo Contacto-->
+    <div><h1 id="TittleCo">Contacto</h1></div>
+    <!--Info contacto-->
+    <div id="fondo3">
+      <h2 id="subtitle">Ponte en contacto con nosotros y resolveremos tus dudas en la mayor brevedad posible.</h2>
+      <form action="" class="formulario">
+        <label for="fname"></label>
+          <input type="text" id="fname" name="fname" placeholder="Tu nombre..." >
+        <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Tu email...">
+        <label for="Asunto"></label>
+          <input type="text" id="asunto" name="asunto" placeholder="Asunto...">
+        <label for="Mensaje"></label>
+          <input type="text" id="mensaje" name="mensaje" placeholder="Tu mensaje...">
+          <textarea name="mensaje" rows="15" cols="71" placeholder="Tu mensaje..."></textarea>
+        <input id ="buttonForm"type="submit" value="Enviar">
+      </form> 
+    </div>
+
+
+   
+  </main>
+  <!--Pie de pagina-->
+  <footer>
+   
+    <div class="flex_row">
+      <div><img id="footerLogo" src="img/logo.png"></div>
+      <div></div>
+      <div></div>
+      <div>
+        <div class="flex_col">
+          <div>
+          
+          </div>
+          <div id="iconFooter">
+            <a id="facebook"  href=""><img class="iconFooter" src="img/fb.png"></a>
+            <a id="twitter"  href=""><img class="iconFooter" src="img/tw.png"></a>
+            <a id="instagram"  href=""><img class="iconFooter" src="img/inst.png"></a>
+            <a id="youtube"  href=""><img class="iconFooter" src="img/yt.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+  </footer>
+</body>
+
+</html>
